@@ -48,7 +48,6 @@ def main():
 
     st.write(range(10))
 
-    #img = Image.open("3d_SVS.jpg")
     img = Image.open(urllib.request.urlopen("https://mms.businesswire.com/media/20200616005364/en/798639/22/Streamlit_Logo_%281%29.jpg"))
     st.image(img, width=300, caption="Simple Image")
 
