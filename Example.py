@@ -48,12 +48,11 @@ def main():
 
     st.write(range(10))
 
+    # Images
     img = Image.open(urllib.request.urlopen("https://mms.businesswire.com/media/20200616005364/en/798639/22/Streamlit_Logo_%281%29.jpg"))
     st.image(img, width=300, caption="Simple Image")
 
     # Videos
-    #vid_file = open("https://www.youtube.com/watch?v=B2iAodr0fOo","rb").read()
-    #st.video(vid_file)
     video_youtube("https://www.youtube.com/embed/B2iAodr0fOo")
 
     #widgets
