@@ -18,7 +18,9 @@ Streamlit is a python package which is used to build the WebGUI applications for
   * pip install streamlit
 
 ## Run
-  * streamlit run [filename]. Eg: streamlit run lession1.py
+  * streamlit run [filename]. 
+    Eg: streamlit run lession1.py
+  * streamlit run [filename] --server.port [portnumber] # To modify the default port number.
 
 ## Team
   * Surendra Reddy
