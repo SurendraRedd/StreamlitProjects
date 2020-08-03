@@ -6,30 +6,23 @@ This project contains the usage of the Streamlit package.
   * [Overview](#overview)
   * [Installation](#installation)
   * [Run](#run)
-  * [Deployement on Heroku](#deployement-on-heroku)
-  * [To Do](#to-do)
-  * [Bug / Feature Request](#bug---feature-request)
-  * [Technologies Used](#technologies-used)
   * [Team](#team)
   * [Credits](#credits)
-
 
 ## Demo
 
 ## Overview
+Streamlit is a python package which is used to build the WebGUI applications for machine learning and data science.
 
 ## Installation
+  * pip install streamlit
 
 ## Run
-
-## Deployement on Heroku
-
-## To Do
-
-## Bug / Feature Request
-
-## Technologies Used
+  * streamlit run [filename]. Eg: streamlit run lession1.py
 
 ## Team
+  * Surendra Reddy
 
 ## Credits
+  * https://awesome-streamlit.org/
+  * https://docs.streamlit.io/en/stable/
