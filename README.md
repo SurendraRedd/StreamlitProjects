@@ -1,4 +1,4 @@
-# Streamlit (UI 
+# Streamlit (WebUI App)
 This project contains the usage of the Streamlit package.
 
 ## Table of Content
