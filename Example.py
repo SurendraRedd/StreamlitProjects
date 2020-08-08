@@ -23,7 +23,10 @@ def main():
 
     # Header/Subheader
     st.header("To Create Header")
-    st.subheader("To Create subheader")
+    st.subheader("To Create subheader")    
+
+    st.subheader("Do you want to build the GUI using web app")
+    st.code('pip install streamlit')
 
     #text
     st.text("hello Streamlit")
@@ -62,9 +65,9 @@ def main():
         st.text("Showing or Hiding Widget")
 
     # Radio
-    status = st.radio("What is your status",("Active","Inactive"))
-    if status == 'Active':
-        st.success("You are Active")
+    status = st.radio("What is your status",("Married","Single"))
+    if status == 'Married':
+        st.success("You are Married")
 
     # Add a selectbox to the sidebar:
     add_selectbox = st.sidebar.selectbox(
@@ -72,12 +75,21 @@ def main():
         ('Home', 'About', 'Help')
     )
 
+    if add_selectbox == 'About':
+        st.write('You have selected about page')
+    elif add_selectbox == 'Home':
+        st.write('you have selected Home page')
+    else:
+        st.write('you have selected help page')
+
     # Sample Progress bar
     my_bar = st.progress(0)
 
     for percent_complete in range(100):
         time.sleep(0.1)
         my_bar.progress(percent_complete + 1)
+
+    st.balloons()
 
     
 ##########################################################################
