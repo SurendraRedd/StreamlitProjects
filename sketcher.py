@@ -27,6 +27,7 @@ def main():
 	# Documentation - Main Function to process
 	# Title of the web page
     st.title("Convert an image in to pencil image")
+    st.subheader("This application has options to select the image either from sidebar or in mainpage.")
     html_temp = """
 	    <body style="background-color:red;">
 	    <div style="background-color:teal ;padding:10px">
