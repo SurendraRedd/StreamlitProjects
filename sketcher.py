@@ -26,7 +26,7 @@ def imageConversion(inputImage):
 def main():
 	# Documentation - Main Function to process
 	# Title of the web page
-    st.title("Convert an image in to pencil image")
+    st.title("Convert an image in to pencil sketch")
     st.subheader("This application has options to select the image either from sidebar or in mainpage.")
     html_temp = """
 	    <body style="background-color:red;">
@@ -86,7 +86,12 @@ def main():
     else:
         pass  
 
-    st.sidebar.text("----------------------------------")
+    st.sidebar.title("Tip - Run app directly from GitHubLink")
+    st.sidebar.info(""" streamlit run 
+    	https://github.com/SurendraRedd/
+    	StreamlitProjects/blob/master
+    	/sketcher.py
+    	""")
     st.sidebar.title("Logic")
     st.sidebar.info(""" 
     	- Convert the color image to grayscale - ```gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)```
@@ -95,12 +100,15 @@ def main():
     	- Blend the grayscale image from step 1 with the blurred negative from step 3 using a color dodge - ```dodgeV2(mg_gray, img_blur)``` 
     	> [Sketch Reference](https://www.askaswiss.com/2016/01/how-to-create-pencil-sketch-opencv-python.html)
     """)
-    st.sidebar.text("----------------------------------")
     st.sidebar.title("About")
     st.sidebar.info("**App version 1.0**")
 
     if st.checkbox("Show source code? "):
         st.code(open("./sketcher.py", encoding="utf-8").read())
+
+    st.info("""
+    	[GitHubLink](https://github.com/SurendraRedd/StreamlitProjects/blob/master/sketcher.py)
+    """)
 
 if __name__ == '__main__':
     main()
