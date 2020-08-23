@@ -4,7 +4,6 @@ from PIL import Image
 import numpy as np
 
 
-
 # Sketch dodge function
 def dodgeV2(x,y):
 	"""
@@ -102,6 +101,9 @@ def main():
     """)
     st.sidebar.title("About")
     st.sidebar.info("**App version 1.0**")
+
+    if st.checkbox("ShowDemo?"):
+      	st.video(open("Demo.mp4","rb").read())    	
 
     if st.checkbox("Show source code? "):
         st.code(open("./sketcher.py", encoding="utf-8").read())
