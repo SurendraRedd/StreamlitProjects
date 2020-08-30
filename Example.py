@@ -56,9 +56,9 @@ def main():
     st.image(img, width=300, caption="Simple Image")
 
     # Video playing
-    vid_file = open("sample-mp4-file.mp4","rb").read() #play the video stored in specified location
-    st.video(vid_file)
-    #videoUserDefined("https://www.youtube.com/embed/B2iAodr0fOo")
+    #vid_file = open("sample-mp4-file.mp4","rb").read() #play the video stored in specified location
+    #st.video(vid_file)
+    videoUserDefined("https://www.youtube.com/embed/B2iAodr0fOo")
 
     #widgets
     if st.checkbox("Show/hide"):
