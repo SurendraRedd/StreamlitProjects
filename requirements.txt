@@ -1,4 +1,6 @@
-numpy==1.16.4
-opencv-python==3.4.2.16
-Pillow==7.2.0
-streamlit==0.65.2
+streamlit==0.69.2
+numpy==1.19.1
+pandas==0.24.2
+opencv_python==4.4.0.42
+Pillow==8.0.1
+protobuf==3.13.0
