@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# Streamlit (WebUI App)
+This project contains the usage of the Streamlit package.
 
-You can use the [editor on GitHub](https://github.com/SurendraRedd/StreamlitProjects/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Table of Content
+  * [Demo](#demo)
+  * [Overview](#overview)
+  * [Installation](#installation)
+  * [Run](#run)
+  * [Team](#team)
+  * [Credits](#credits)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Demo
 
-### Markdown
+## Overview
+Streamlit is a python package which is used to build the WebGUI applications for machine learning and data science.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Installation
+  * pip install streamlit
 
-```markdown
-Syntax highlighted code block
+## Run
+  * streamlit run [filename]. 
+    Eg: streamlit run lession1.py
+  * streamlit run [filename] --server.port [portnumber] # To modify the default port number.
 
-# Header 1
-## Header 2
-### Header 3
+## Team
+  * Surendra Reddy
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SurendraRedd/StreamlitProjects/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Credits
+  * https://awesome-streamlit.org/
+  * https://docs.streamlit.io/en/stable/
