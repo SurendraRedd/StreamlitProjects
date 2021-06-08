@@ -2,5 +2,5 @@ streamlit==0.69.2
 numpy==1.19.1
 pandas==0.24.2
 opencv_python==4.4.0.42
-Pillow==8.1.1
+Pillow==8.2.0
 protobuf==3.13.0
