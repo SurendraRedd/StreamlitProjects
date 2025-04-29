@@ -1,6 +1,6 @@
-streamlit==0.69.2
-numpy==1.19.1
+streamlit==1.11.1
+numpy==1.22
 pandas==0.24.2
-opencv_python==4.4.0.42
-Pillow==8.1.1
-protobuf==3.13.0
+opencv_python==4.8.1.78
+Pillow==8.3.0
+protobuf==3.15.0
