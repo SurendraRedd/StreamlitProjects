@@ -46,8 +46,9 @@ def videoUserDefined(src: str, width="100%", height=315):
 # @cache
 @st.cache
 def load_data():
-    df = pd.read_csv("https://github.com/SurendraRedd/StreamlitProjects/raw/master/lang.csv")
-    return df
+    return pd.read_csv(
+        "https://github.com/SurendraRedd/StreamlitProjects/raw/master/lang.csv"
+    )
 
 
 # In[ ]:
@@ -75,7 +76,7 @@ def main():
 
 	"""
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.markdown('<i class="material-icons">{}</i>'.format("people"), unsafe_allow_html=True)
+    st.markdown('<i class="material-icons">people</i>', unsafe_allow_html=True)
     st.latex(r''' e^{i\pi} + 1 = 0 ''')
     st.latex(r'''
     ...     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
@@ -92,8 +93,7 @@ def main():
     my_table = st.table(df1)
 
     df = st.cache(pd.read_csv)("https://github.com/SurendraRedd/StreamlitProjects/raw/master/lang.csv")
-    is_check = st.checkbox("Display Data")
-    if is_check:
+    if is_check := st.checkbox("Display Data"):
         st.write(df)
 
     st.write('Dataframe example')
@@ -116,7 +116,7 @@ def main():
 
     data = {'1':"True",'2':"True",'3':"False"}
     st.json(data)
-    
+
     # Exception handling
     st.exception("IndexError('list out of index')")
 
@@ -163,7 +163,7 @@ def main():
                          ["SamaraSimhaReddy", "Simha",
                          "NarasimhaNaidu", "Legend"])
 
-      
+
     # Will only run once if already cached
     df = load_data()
     st.write(df)
@@ -187,7 +187,7 @@ def main():
     with st.echo():
         text = 's="Happy Learning!" for i in range(0,10): print(s)'
         st.write(text)
-    
+
 
     #Image opening
     #img = Image.open("download.jfif") #open the image stored in specified location
@@ -230,7 +230,7 @@ def main():
     for percent_complete in range(100):
         time.sleep(0.1)
         my_bar.progress(percent_complete + 1)
-    
+
     with st.spinner('Wait for it...'):
         time.sleep(5)
     st.success('Done!')
